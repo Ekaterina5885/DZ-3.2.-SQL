@@ -9,7 +9,6 @@ import ru.netology.page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-
 public class LoginSystemTest {
 
     @BeforeEach
