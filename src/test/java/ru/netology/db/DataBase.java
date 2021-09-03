@@ -12,10 +12,10 @@ public class DataBase {
         var conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/app", "app", "pass");
 
-        conn.prepareStatement("DROP TABLE IF EXISTS cards;");
-        conn.prepareStatement("DROP TABLE IF EXISTS users;");
-        conn.prepareStatement("DROP TABLE IF EXISTS auth_codes");
-        conn.prepareStatement("DROP TABLE IF EXISTS card_transactions");
+        conn.prepareStatement("DELETE FROM auth_codes");
+        conn.prepareStatement("DELETE FROM card_transactions");
+        conn.prepareStatement("DELETE FROM cards");
+        conn.prepareStatement("DELETE FROM users");
     }
 
     @SneakyThrows

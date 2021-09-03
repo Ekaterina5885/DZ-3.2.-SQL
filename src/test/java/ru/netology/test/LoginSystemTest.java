@@ -29,7 +29,7 @@ public class LoginSystemTest {
         var authInfo = DataHelper.getAuthInfo();
         var verificationPage = loginPage.validData(authInfo);
         var code = DataBase.getCorrectVerificationCode();
-        verificationPage.validVerify((String) code);
+        verificationPage.validVerify(code);
     }
 
     // Авторизация с неверным паролем;

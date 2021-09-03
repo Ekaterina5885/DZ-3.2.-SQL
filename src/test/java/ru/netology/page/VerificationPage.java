@@ -26,7 +26,6 @@ public class VerificationPage {
         codeField.setValue(String.valueOf(verificationCode));
         verifyButton.click();
         errorInvalidCode.shouldBe(visible);
-        new VerificationPage();
     }
 
     public void getErrorIfInvalidSmsCode() {
