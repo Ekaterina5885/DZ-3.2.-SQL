@@ -12,8 +12,8 @@ public class DataBase {
         var conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/app", "app", "pass");
 
-        conn.prepareStatement("DELETE FROM users").execute();
         conn.prepareStatement("DELETE FROM cards").execute();
+        conn.prepareStatement("DELETE FROM users").execute();
         conn.prepareStatement("DELETE FROM auth_codes").execute();
         conn.prepareStatement("DELETE FROM card_transactions").execute();
     }
